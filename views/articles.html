@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>PSitnik-angularJSTest Articles</title>
+</head>
+<body ng-controller="ArticlesController">
+
+        <h2>Articles</h2>
+        <br /> <br />
+
+        <div ng-repeat="article in articles">
+            <br />
+            <a href="#/articles/{{article.id}}"> {{article.title}}  </a> by <u>{{article.author}}</u> <br />
+            <p> {{article.text}} </p>
+            <hr />
+        </div>
+
+   
+</body>
+</html>
